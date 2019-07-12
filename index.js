@@ -4,8 +4,8 @@ class Button extends React.Component {
       this.state = {
           value:'button musuh',
           payload: 'ini payload dari children'
-      }  
-    }
+        }
+    }  
 
     render () {
         return (
@@ -47,6 +47,7 @@ class Home extends React.Component {
                 <Button
                     value='button ganang'
                     from_children={(e) => this.dear_mom(e)}
+                    aku_kasi_nama={this.state.name}
                 />
                 <ButtonFunction
                     value='button function'
